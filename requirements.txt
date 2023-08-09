@@ -1,8 +1,7 @@
 fastapi[all]~=0.101.0
-SQLAlchemy~=1.4.40
-pydantic~=1.10.12
-python-jose
 uvicorn[standard]
+SQLAlchemy~=1.4.40
+python-jose~=3.3.0
 passlib[bcrypt]~=1.7.4
 
 jose~=1.0.0
