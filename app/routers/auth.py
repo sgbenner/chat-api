@@ -21,7 +21,7 @@ from app.services.auth import authenticate_user, create_access_token
 
 router = APIRouter(prefix="/" + AUTH_URL, tags=AUTH_TAGS)
 
-@router.post("/login", response_model=TokenSchema)
+@router.post("/token", response_model=TokenSchema)
 async def authenticate(form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
                        db: Session = Depends(get_db)):
     user = authenticate_user(db=db, email=form_data.username, password=form_data.password)
