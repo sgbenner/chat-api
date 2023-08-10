@@ -107,3 +107,4 @@ venv.bak/
 # Mac OS
 .DS_Store
 /sql_app.db
+/app.db
